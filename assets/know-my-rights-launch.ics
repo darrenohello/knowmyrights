@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ausmed//Know My Rights Prelaunch//EN
+BEGIN:VEVENT
+UID:know-my-rights-launch@ausmed.com.au
+DTSTAMP:20250201T000000Z
+DTSTART;VALUE=DATE:20260201
+DTEND;VALUE=DATE:20260202
+SUMMARY:Know My Rights microlearning site launches
+DESCRIPTION:Remember to check out the Know My Rights microlearning site launching this month.
+END:VEVENT
+END:VCALENDAR
