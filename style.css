@@ -722,6 +722,13 @@ a.btn {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+a.btn.kmr-btn-ausmed {
+    background: linear-gradient(300deg, #D70E4B 0%, #B20C3E 100%);
+    border: #FA888E 4px solid;
+    border-top: none;
+    border-left: none;
+}
+
 /* HUBSPOT FORM */
 
 .hsfc-Step .hsfc-Step__Content {
@@ -1033,14 +1040,24 @@ a.btn {
 
 .kmr-logos .ia-logo {
     max-width: 7rem;
+    width: 100%;
 }
 
 .kmr-logos .ndis-logo {
     max-width: 26rem;
+    width: 100%;
 }
 
 .kmr-logos .ausmed-logo {
     max-width: 14rem;
+    width: 100%;
+}
+
+.kmr-logos a[target="_blank"]:after {
+    content: '';
+    display: none;
+    width: 100%;
+    height: 100%;
 }
 
 .kmr-hero-img {
