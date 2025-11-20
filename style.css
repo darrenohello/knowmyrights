@@ -432,6 +432,11 @@ p {
     margin-bottom: 2rem;
 }
 
+.kmr-hero-logo, 
+.kmr-hero-mnemonic {
+    width: 100%;
+}
+
 /* MNEMONIC */
 
 .kmr-mnemonic-wrapper {
