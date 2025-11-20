@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="topnav">
       <div class="topnav-wrapper">
           <a href="./index.html" class="kmr-nav-logo">
@@ -32,7 +33,7 @@
       </div>
   </header>
 
-  <main>
+  <main id="main-content">
       <section class="kmr-section kmr-section-hero">
           <div class="kmr-container kmr-prelaunch-hero">
               <img class="kmr-about-hero-img" src="./assets/about-hero.svg" alt="Know My Rights">
@@ -52,7 +53,7 @@
               <div class="kmr-logos">
                   <img class="ausmed-logo" src="./assets/ausmed-logo.svg" alt="Ausmed Logo">
                   <img class="ia-logo" src="./assets/inclusion-australia-logo.png" alt="Inclusion Australia Logo">
-                  <img class="ndis-logo" src="./assets/ndis-logo.png" alt="NDIS Logo">
+                  <img class="ndis-logo" src="./assets/ndis-logo.svg" alt="NDIS Logo - Funded by the NDIS Quality and Safeguards Comission Grants Program">
               </div>
           </div>
       </section>
@@ -95,8 +96,8 @@
         <div class="kmr-container kmr-alert-dark">
 
           <h2>Why learn about your NDIS rights?</h2>
-          <p>The National Disability Insurance Scheme (NDIS) exists to support people with disabilities, but understanding your rights is key to getting the most out of it.</p>
-          <p>When launched in February 2026, this platform will provide easy-to-follow learning to help you:</p>
+          <p class="max-ch">The National Disability Insurance Scheme (NDIS) exists to support people with disabilities, but understanding your rights is key to getting the most out of it.</p>
+          <p class="max-ch">When launched in February 2026, this platform will provide easy-to-follow learning to help you:</p>
           <ol>
             <li>Know what supports you are entitled to.</li>
             <li>Understand how to advocate for yourself or others.</li>
@@ -107,17 +108,19 @@
       </section>
 
       <section class="kmr-section">
-        <div class="kmr-container">
-          <h2 class="text-brand">About Ausmed</h2>
-          <p class="text-brand">Know My Rights is developed by Ausmed, an Australian leader in education for the disability, aged care, and health sectors.</p>
-          <p class="text-brand">We help organisations understand and meet their regulatory responsibilities through reliable, practical training trusted across the country.</p>
-          <img class="ausmed-logo" src="./assets/ausmed-logo.svg" alt="Ausmed Logo">
+        <div class="kmr-container kmr-ausmed-section">
+          <div>
+            <h2>About Ausmed</h2>
+            <p class="max-ch text-wrap-balance">Know My Rights is developed by Ausmed, an Australian leader in education for the disability, aged care, and health sectors.</p>
+            <p class="max-ch text-wrap-balance">We help organisations understand and meet their regulatory responsibilities through reliable, practical training trusted across the country.</p>
+          </div>
+          <img class="ausmed-logo" src="./assets/ausmed-logo-white.svg" alt="Ausmed Logo">
         </div>
       </section>
 
       <section class="kmr-section">
-        <div class="kmr-container">
-          <h2 class="text-center text-brand">The Know My Rights microleaning site has been designed for and by each of these audiences</h2>
+        <div class="kmr-container kmr-container-wide">
+          <h2 class="text-center text-brand">The Know My Rights microlearning site has been designed for and by each of these audiences</h2>
           <ul class="audience-cards">
 
             <li>
@@ -157,30 +160,34 @@
 
           </ul>
           <!-- <img src="./assets/kmr-cohorts.png" alt="Know My Rights Cohorts"> -->
-          <p class="f-1000 text-brand fw-bold text-center">Launching February 2026!</p>
+          <!-- <p class="f-1000 text-brand fw-bold text-center">Launching February 2026!</p> -->
+          
           
         </div>
       </section>
 
       <section class="kmr-section">
-        <div class="kmr-container text-center">
-          <p class="f-600 fw-bold text-brand lh-xs">Don't miss the launch of Know My Rights!</p>
-          <p class="f-500 fw-semibold text-brand lh-xs" style="margin-bottom: 1.5rem;">Add it to your calendar now.</p>
-          <a href="/assets/know-my-rights-launch.ics" class="btn kmr-primary-light btn-lg">Add to my calendar 🗓️</a>
-          <p class="f-200" style="margin-top: 1.5rem;">We won’t collect your email or any personal details. <br> This just adds a reminder in your own calendar.</p>
+        <div class="kmr-container kmr-footer-cta">
+          <div>
+            <p class="f-600 fw-bold text-brand lh-md">Don't miss the February 2026 launch of Know My Rights!</p>
+            <p class="f-500 fw-semibold text-brand lh-xs" style="margin-bottom: 1.5rem;">Add it to your calendar now</p>
+            <a href="/assets/know-my-rights-launch.ics" class="btn kmr-primary btn-lg" aria-label="Add Know My Rights launch to my calendar">Add to my calendar<span aria-hidden="true">&nbsp;🗓️</span></a>
+            <p class="f-200" style="margin-top: 1.5rem;">We won’t collect your email or any personal details. <br> This just adds a reminder in your own calendar.</p>
+          </div>
+          <img src="./assets/rocket.svg" alt="Rocket Launching" class="kmr-footer-cta-img">
         </div>
       </section>
 
       <footer class="kmr-section kmr-section-footer">
-          <div class="kmr-container">
-              <img src="./assets/kmr-hero-logo.png" alt="Know My Rights" width="150" style="margin-bottom: 1.5rem;">
-              <div class="kmr-container">
-                  <p class="f-100 text-brand">Know My Rights acknowledges the Traditional Owners and Custodians of Country throughout Australia and acknowledges their continuing connection to land, sea and community. We pay our respects to the people, the cultures and the Elders past, present and emerging.</p>
-                  <p class="f-100 text-brand">Developed by Ausmed Education for the National Disability Insurance Agency</p>
-                  <p class="f-100 text-brand">© Copyright 2025 Know My Rights. All rights reserved.</p>
-              </div>
-          </div>
-      </footer>
+        <div class="kmr-container">
+            <img src="./assets/KMR-logo-purple-stacked.svg" alt="Know My Rights" width="150" style="margin-bottom: 1.5rem;">
+            <div class="kmr-container">
+                <p class="f-100 text-brand">Know My Rights acknowledges the Traditional Owners and Custodians of Country throughout Australia and acknowledges their continuing connection to land, sea and community. We pay our respects to the people, the cultures and the Elders past, present and emerging.</p>
+                <p class="f-100 text-brand">Developed by <a class="link-blue fw-semibold" href="https://www.ausmed.com" target="_blank" rel="noopener noreferrer">Ausmed Education<span class="visually-hidden"> (opens in new window)</span></a> for the <a class="link-blue fw-semibold" href="https://www.ndis.gov.au" target="_blank" rel="noopener noreferrer">National Disability Insurance Agency<span class="visually-hidden"> (opens in new window)</span></a></p>
+                <p class="f-100 text-brand">© Copyright 2025 Know My Rights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
   </main>
 </body>
 </html>

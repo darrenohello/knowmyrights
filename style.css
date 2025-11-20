@@ -204,6 +204,47 @@
   
   .skip-link:focus {
     top: 88px;
+    outline: 3px solid var(--kmr-purple-700);
+    outline-offset: 2px;
+}
+
+/* Visually hidden utility class for screen reader only content */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--kmr-purple-700);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+a.btn:focus-visible,
+button.btn:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+a.btn.kmr-primary:focus-visible,
+button.kmr-primary:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+a.btn.kmr-primary-light:focus-visible,
+button.kmr-primary-light:focus-visible {
+    outline: 3px solid var(--kmr-purple-700);
+    outline-offset: 2px;
 }
 
 
@@ -375,6 +416,10 @@ p {
 
 /* --- 4. LAYOUT / SECTIONS --- */
 
+/* LAYOUT CLASSES */
+
+
+
 /* HOME PAGE */
 
 .kmr-hero-logo {
@@ -420,6 +465,27 @@ p {
     }
 }
 
+
+/* LEARNING EXPERIENCE */
+
+.kmr-learning-experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.kmr-learning-experience-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+.kmr-learning-experience-item img {
+    max-height: 5rem;
+}
 
 /* AUDIENCE CARDS */
 
@@ -473,6 +539,7 @@ ul.audience-cards {
 
     .audience-card {
         flex-direction: column;
+        min-height: 18rem;
     }
 
     .audience-card-img {
@@ -488,7 +555,7 @@ ul.audience-cards {
 /* SECTIONS */
 
 .kmr-section {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
     display: grid;
     place-items: center;
 }
@@ -510,6 +577,12 @@ ul.audience-cards {
 .kmr-section .kmr-container {
     padding: 0;
     max-width: var(--container-max-width);
+    width: 100%;
+}
+
+.kmr-section .kmr-container.kmr-container-wide {
+    padding: 0;
+    max-width: 90rem;
     width: 100%;
 }
 
@@ -963,7 +1036,7 @@ a.btn {
 }
 
 .kmr-logos .ndis-logo {
-    max-width: 24rem;
+    max-width: 26rem;
 }
 
 .kmr-logos .ausmed-logo {
@@ -1250,6 +1323,18 @@ svg.value-prop-img {
 }
 
 
+/* Footer CTA */
+
+.kmr-footer-cta-img {
+    max-width: 8rem;
+}
+
+@media (min-width: 768px) {
+    .kmr-footer-cta-img {
+        max-width: 12rem;
+        margin-inline: 2rem;
+    }
+}
 /* Footer */
 
 .kmr-section-footer {
@@ -1427,4 +1512,68 @@ svg.value-prop-img {
 /* Colours */
 .bg-kmr-orange-100 {
     background-color: var(--kmr-orange-100);
+}
+
+
+.kmr-section .kmr-ausmed-section {
+    background: radial-gradient(53.01% 204.37% at 50% 204.37%, var(--Product-Navy-800, #0E3789) 0%, #001540 100%);
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .kmr-section .kmr-ausmed-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.kmr-ausmed-section div {
+    color: white;
+}
+
+.kmr-ausmed-section div h2 {
+    margin-top: 0;
+}
+
+.kmr-ausmed-section h2 {
+    color: white;
+}
+
+.kmr-ausmed-section img {
+    max-width: 16rem;
+}
+
+.kmr-section .kmr-footer-cta {
+    background: var(--gradient-kmr-purple);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: var(--kmr-purple-100) 2px solid;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    text-wrap: balance;
+}
+
+.kmr-section .kmr-footer-cta div *:first-child {
+    margin-top: 0;
+}
+
+.kmr-section .kmr-footer-cta div *:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .kmr-section .kmr-footer-cta {
+        flex-direction: row;
+        text-align: left;
+    }
 }
